@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seja bem-vindo à A Ponte BH! Encontre informações sobre sua primeira visita, horários dos cultos e localização." />
+  <meta name="keywords" content="igreja, ponte BH, primeira visita, culto, igreja cristã, Belo Horizonte" />
+  <meta name="author" content="Igreja A Ponte BH" />
+  <title>Primeira Visita - A Ponte BH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://github.com/comunicaponte/imagens-site/raw/main/pag%20principal%203.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #f0f0f0;
+    }
+
+    .section-title {
+      color: #0baab2;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .intro-section {
+      background-color: #f0fdfd;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .intro-section p {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+
+    .form-section {
+      background-color: #f1f1f1;
+      padding: 60px 20px;
+    }
+
+    .form-section .btn-primary {
+      background-color: #0baab2;
+      border: none;
+    }
+
+    .highlight-img {
+      width: 100%;
+      border-radius: 12px;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .highlight h4 {
+      color: #0baab2;
+    }
+
+    .service-times {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .service-times .times {
+      font-size: 1.8rem;
+      color: white;
+      font-weight: 700;
+      background-color: #0baab2;
+      padding: 25px 40px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .address-box {
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Seja bem-vindo à A Ponte BH</h1>
+      <p>Queremos te ajudar a viver um encontro verdadeiro com Deus e com a comunidade!</p>
+    </div>
+  </section>
+
+  <section class="service-times">
+    <div class="container">
+      <h2 class="section-title">Horários dos Cultos</h2>
+      <p class="times">Domingo: 9h, 11h e 19h</p>
+    </div>
+  </section>
+
+  <section class="intro-section">
+    <div class="container">
+      <p>
+        É uma alegria receber você! Preencha o formulário abaixo para que possamos te receber de forma especial. Nossa equipe está preparada para tornar sua experiência acolhedora, confortável e significativa.
+      </p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <h2 class="text-center section-title">Formulário de Boas-Vindas</h2>
+      <form class="row g-3" action="https://formsubmit.io/send/comunicacao@apontebh.com.br" method="POST">
+        <input name="_redirect" type="hidden" value="https://apontebh.com.br/obrigado" />
+        <input name="_formsubmit_id" type="text" style="display:none">
+
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="Nome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" name="Telefone" required>
+        </div>
+        <div class="col-md-6">
+          <label for="quantasPessoas" class="form-label">Quantas pessoas irão com você?</label>
+          <input type="number" class="form-control" id="quantasPessoas" name="Número de pessoas" required>
+        </div>
+        <div class="col-md-6">
+          <label for="filhos" class="form-label">Você vem com filhos?</label>
+          <select id="filhos" name="Tem filhos?" class="form-select">
+            <option selected>Escolha...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+          <small class="text-muted">A Pontezinha está pronta para recebê-los com amor!</small>
+        </div>
+        <div class="col-md-12">
+          <label for="acessibilidade" class="form-label">Alguém necessita de acessibilidade?</label>
+          <select id="acessibilidade" name="Necessita de acessibilidade?" class="form-select">
+            <option selected>Escolha...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5 mt-4">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 highlight">
+          <img src="https://github.com/comunicaponte/imagens-site/raw/main/convidativa2.jpg" class="highlight-img" alt="Recepção">
+          <h4>Recepção</h4>
+          <p>Você será recebido por uma equipe acolhedora e preparada para te receber com alegria.</p>
+        </div>
+        <div class="col-md-4 highlight">
+          <img src="https://github.com/comunicaponte/imagens-site/raw/main/IMG_6982.jpg" class="highlight-img" alt="Pontezinha">
+          <h4>Pontezinha</h4>
+          <p>Temos um espaço especial, divertido e seguro para as crianças.</p>
+        </div>
+        <div class="col-md-4 highlight">
+          <img src="https://github.com/comunicaponte/imagens-site/raw/main/fachada%20ponte.png" class="highlight-img" alt="Acessibilidade">
+          <h4>Acessibilidade</h4>
+          <p>Nosso ambiente é acessível para todos. Queremos que cada pessoa se sinta acolhida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container address-box">
+    <h3>Endereço da Igreja</h3>
+    <p><strong>R. Castelo de Sintra, 968</strong></p>
+    <p>Bairro Castelo - Belo Horizonte, MG</p>
+    <div class="map-container mt-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3261179112776!2d-43.98050782394281!3d-19.441710280824107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699fc1f25d533%3A0x3d4f3d04f6d621f6!2sR.%20Castelo%20de%20Sintra%2C%20968%20-%20Castelo%2C%20Belo%20Horizonte%20-%20MG%2C%2031330-510!5e0!3m2!1spt-BR!2sbr!4v1717352765673!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Igreja A Ponte BH - Todos os direitos reservados</p>
+    <div class="social-links mt-3">
+      <a href="https://www.instagram.com/aponte_bh/" target="_blank">Instagram</a> |
+      <a href="https://www.youtube.com/@aponte_bh" target="_blank">YouTube</a> |
+      <a href="https://open.spotify.com/show/7xuJ0QrNgLJNmrHNi3Hp6W?si=52ca7a2598c34101" target="_blank">Spotify</a> |
+      <a href="https://www.facebook.com/apontebh" target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
