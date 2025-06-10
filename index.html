@@ -6,48 +6,48 @@
     <title>A ponte</title>
   </head>
   <body>
-      <style>
-          body {
-          margin: 0;
-          padding: 0;
-          display: flex;
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 1vw;
+        height: 1vh;
+      }
+      nav {
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 1200px;
+        min-width: 400px;
+      }
+      ul {
+        padding: 0 1rem;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 0.5rem;
+      }
+      li {
+        padding: 1rem;
+        border: 1px solid #0baab2;
+        list-style: none;
+        border-radius: 8px;
+        min-width: fit-content;
+      }
+      a {
+        text-decoration: none;
+      }
+      @media (max-width: 600px) {
+        ul {
           flex-direction: column;
-          align-content: center;
-              width: 1vw;
-              height:1vh;
-          }
-          nav {
-              display: block;
-              padding: 0;
-              margin:0;
-              width: 100%; 
-              max-width: 1200px;
-              min-width: 400px;
-          }
-          ul {
-              padding: 0 1rem;
-              margin:0;
-              display: flex;
-              justify-content: space-around;
-              width: 100%;
-              gap: 0.5rem;
-          }
-          li {
-              padding: 1rem;
-              border: 1px solid #0BAAB2;
-              list-style: none;
-              border-radius: 8px;
-              min-width: fit-content;
-          }
-          a {
-              text-decoration: none;
-          }
-          @media (max-width: 600px) {
-              ul {
-                  flex-direction: column;
-              }
-          }
-      </style>
+        }
+      }
+    </style>
     <header>
       <h1>Páginas</h1>
     </header>
@@ -57,6 +57,7 @@
         <li><a href="pages/paginaGR.html">GR</a></li>
         <li><a href="pages/primeiraVisita.html">Primeira Visita</a></li>
         <li><a href="pages/sobrenos2.html">Sobre Nós</a></li>
+        <li><a href="pages/sobrenos3.html">Sobre Nós 2</a></li>
         <li><a href="pages/voluntarios2.html">Voluntários</a></li>
       </ul>
     </nav>

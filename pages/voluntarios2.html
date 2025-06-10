@@ -1,198 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Voluntários - A Ponte BH. Descubra como servir e fazer parte do time de voluntários da igreja A Ponte." />
-  <meta name="keywords" content="igreja, voluntariado, servir, ponte, belo horizonte" />
-  <meta name="author" content="Igreja A Ponte" />
-  <title>Voluntários - A Ponte</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #222;
-    }
-    .hero {
-      position: relative;
-      height: 80vh;
-      background: url('https://github.com/comunicaponte/site-a-ponte/main/images/daniegabriel.png') center 35% / cover no-repeat;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      color: white;
-      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
-      padding-bottom: 60px;
-    }
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: bold;
-    }
-    .section {
-      padding: 80px 20px;
-    }
-    .section h2 {
-      font-size: 2.5rem;
-      color: #023047;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .section p {
-      max-width: 850px;
-      margin: 0 auto 30px auto;
-      font-size: 1.2rem;
-      text-align: center;
-    }
-    .img-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 50px;
-    }
-    .img-box img {
-      width: 100%;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .img-box img:hover {
-      transform: scale(1.03);
-    }
-    .areas-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 40px;
-      margin-top: 30px;
-    }
-    .area-box {
-      background: #f0fdfd;
-      padding: 30px;
-      border-left: 6px solid #00a8a8;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      transition: all 0.3s ease;
-    }
-    .area-box:hover {
-      background: #e0f7f7;
-      transform: translateY(-4px);
-    }
-    .area-box strong {
-      font-size: 1.4rem;
-      display: block;
-      color: #014f50;
-      margin-bottom: 10px;
-    }
-    .form-section iframe {
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    }
-    .footer {
-      background-color: #023047;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .social-links a {
-      color: white;
-      margin: 0 15px;
-      font-size: 1.3rem;
-      text-decoration: none;
-    }
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Voluntários - A Ponte BH. Descubra como servir e fazer parte do time de voluntários da igreja A Ponte."
+    />
+    <meta
+      name="keywords"
+      content="igreja, voluntariado, servir, ponte, belo horizonte"
+    />
+    <meta name="author" content="Igreja A Ponte" />
+    <title>Voluntários - A Ponte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #ffffff;
+        color: #222;
+      }
+      .hero {
+        position: relative;
+        height: 80vh;
+        background: url("https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/daniegabriel.png")
+          center 35% / cover no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        padding-bottom: 60px;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+      .section {
+        padding: 80px 20px;
+      }
+      .section h2 {
+        font-size: 2.5rem;
+        color: #023047;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .section p {
+        max-width: 850px;
+        margin: 0 auto 30px auto;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      .img-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-top: 50px;
+      }
+      .img-box img {
+        width: 100%;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .img-box img:hover {
+        transform: scale(1.03);
+      }
+      .areas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+        margin-top: 30px;
+      }
+      .area-box {
+        background: #f0fdfd;
+        padding: 30px;
+        border-left: 6px solid #00a8a8;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+      }
+      .area-box:hover {
+        background: #e0f7f7;
+        transform: translateY(-4px);
+      }
+      .area-box strong {
+        font-size: 1.4rem;
+        display: block;
+        color: #014f50;
+        margin-bottom: 10px;
+      }
+      .form-section iframe {
+        border-radius: 16px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+      .footer {
+        background-color: #023047;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .social-links a {
+        color: white;
+        margin: 0 15px;
+        font-size: 1.3rem;
+        text-decoration: none;
+      }
+      .social-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Seja um voluntário!</h1>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Seja um voluntário!</h1>
-  </section>
-
-  <!-- Introdução -->
-  <section class="section">
-    <div class="container">
-      <p>Na Ponte, acreditamos que todo cristão é chamado para servir à comunidade. Essa não é apenas uma responsabilidade, mas uma oportunidade de viver o Evangelho na prática, glorificando a Deus com nossos dons e talentos.</p>
-      <p>Quando servimos, nos tornamos instrumentos nas mãos de Deus, participando ativamente da Sua obra e edificando a igreja para a glória d'Ele. Cada área de serviço é uma chance de impactar vidas, seja acolhendo quem chega, ensinando crianças, ou alcançando os mais vulneráveis.</p>
-      <div class="img-grid">
-        <div class="img-box">
-          <img src="https://github.com/comunicaponte/site-a-ponte/main/images/20231029190726__MG_6648.jpg">
-        </div>
-        <div class="img-box">
-          <img src="https://github.com/comunicaponte/site-a-ponte/main/images/20240901201134__MG_9646.jpg">
-        </div>
-        <div class="img-box">
-          <img src="https://github.com/comunicaponte/site-a-ponte/main/images/20240901205557__MG_9794.jpg">
+    <!-- Introdução -->
+    <section class="section">
+      <div class="container">
+        <p>
+          Na Ponte, acreditamos que todo cristão é chamado para servir à
+          comunidade. Essa não é apenas uma responsabilidade, mas uma
+          oportunidade de viver o Evangelho na prática, glorificando a Deus com
+          nossos dons e talentos.
+        </p>
+        <p>
+          Quando servimos, nos tornamos instrumentos nas mãos de Deus,
+          participando ativamente da Sua obra e edificando a igreja para a
+          glória d'Ele. Cada área de serviço é uma chance de impactar vidas,
+          seja acolhendo quem chega, ensinando crianças, ou alcançando os mais
+          vulneráveis.
+        </p>
+        <div class="img-grid">
+          <div class="img-box">
+            <img
+              src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/20231029190726__MG_6648.jpg"
+            />
+          </div>
+          <div class="img-box">
+            <img
+              src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/20240901201134__MG_9646.jpg"
+            />
+          </div>
+          <div class="img-box">
+            <img
+              src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/20240901205557__MG_9794.jpg"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Áreas de Serviço -->
-  <section class="section bg-light">
-    <div class="container">
-      <h2>Áreas de Serviço</h2>
-      <div class="areas-grid">
-        <div class="area-box">
-          <strong>Conexão</strong>
-          Seja a primeira pessoa que alguém encontra ao chegar à igreja. Mostre o amor de Cristo, criando um ambiente de hospitalidade.
-        </div>
-        <div class="area-box">
-          <strong>Comunicação e mídia</strong>
-          Use seus dons em fotografia, design, redes sociais ou audiovisual para levar a mensagem do Evangelho mais longe.
-        </div>
-        <div class="area-box">
-          <strong>Louvor</strong>
-          Junte-se à equipe que conduz a igreja ao louvor e adoração.
-        </div>
-        <div class="area-box">
-          <strong>Pontezinha</strong>
-          Ajude no discipulado e cuidado das crianças e pré-adolescentes.
-        </div>
-        <div class="area-box">
-          <strong>Portal (Social)</strong>
-          Leve o amor de Cristo de forma prática àqueles que mais precisam, demonstrando compaixão e cuidado através dos nossos projetos sociais.
-        </div>
-        <div class="area-box">
-          <strong>Ponte Café</strong>
-          Faça parte de uma equipe que torna a recepção dos membros e visitantes mais calorosa, servindo aos irmãos como expressão de cuidado e hospitalidade cristã.
-        </div>
-        <div class="area-box">
-          <strong>Ponte Shop</strong>
-          Contribua para o crescimento espiritual da igreja ajudando na venda de itens que edificam vidas e compartilham o Evangelho.
-        </div>
-        <div class="area-box">
-          <strong>GR</strong>
-          Seja anfitrião de um Grupo de Relacionamento, promovendo comunhão, discipulado e crescimento espiritual contínuo na vida da igreja.
+    <!-- Áreas de Serviço -->
+    <section class="section bg-light">
+      <div class="container">
+        <h2>Áreas de Serviço</h2>
+        <div class="areas-grid">
+          <div class="area-box">
+            <strong>Conexão</strong>
+            Seja a primeira pessoa que alguém encontra ao chegar à igreja.
+            Mostre o amor de Cristo, criando um ambiente de hospitalidade.
+          </div>
+          <div class="area-box">
+            <strong>Comunicação e mídia</strong>
+            Use seus dons em fotografia, design, redes sociais ou audiovisual
+            para levar a mensagem do Evangelho mais longe.
+          </div>
+          <div class="area-box">
+            <strong>Louvor</strong>
+            Junte-se à equipe que conduz a igreja ao louvor e adoração.
+          </div>
+          <div class="area-box">
+            <strong>Pontezinha</strong>
+            Ajude no discipulado e cuidado das crianças e pré-adolescentes.
+          </div>
+          <div class="area-box">
+            <strong>Portal (Social)</strong>
+            Leve o amor de Cristo de forma prática àqueles que mais precisam,
+            demonstrando compaixão e cuidado através dos nossos projetos
+            sociais.
+          </div>
+          <div class="area-box">
+            <strong>Ponte Café</strong>
+            Faça parte de uma equipe que torna a recepção dos membros e
+            visitantes mais calorosa, servindo aos irmãos como expressão de
+            cuidado e hospitalidade cristã.
+          </div>
+          <div class="area-box">
+            <strong>Ponte Shop</strong>
+            Contribua para o crescimento espiritual da igreja ajudando na venda
+            de itens que edificam vidas e compartilham o Evangelho.
+          </div>
+          <div class="area-box">
+            <strong>GR</strong>
+            Seja anfitrião de um Grupo de Relacionamento, promovendo comunhão,
+            discipulado e crescimento espiritual contínuo na vida da igreja.
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Formulário -->
-  <section class="section form-section">
-    <div class="container">
-      <h2>Formulário de Voluntariado</h2>
-      <p>Preencha com seus dados e entraremos em contato:</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-k8EMDZK_7jnnsIAyUMHuNcQuDFXeEaleajdfHASMxNu_Hg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-    </div>
-  </section>
+    <!-- Formulário -->
+    <section class="section form-section">
+      <div class="container">
+        <h2>Formulário de Voluntariado</h2>
+        <p>Preencha com seus dados e entraremos em contato:</p>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd-k8EMDZK_7jnnsIAyUMHuNcQuDFXeEaleajdfHASMxNu_Hg/viewform?embedded=true"
+          width="100%"
+          height="800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Carregando…</iframe
+        >
+      </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer class="footer">
-    <p>&copy; 2025 Igreja A Ponte BH. Todos os direitos reservados.</p>
-    <div class="social-links mt-3">
-      <a href="https://www.instagram.com/aponte_bh/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@aponte_bh" target="_blank">YouTube</a>
-      <a href="https://open.spotify.com/show/7xuJ0QrNgLJNmrHNi3Hp6W?si=395906eae4d141ce" target="_blank">Spotify</a>
-      <a href="https://web.facebook.com/apontebh" target="_blank">Facebook</a>
-    </div>
-  </footer>
-
-</body>
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>&copy; 2025 Igreja A Ponte BH. Todos os direitos reservados.</p>
+      <div class="social-links mt-3">
+        <a href="https://www.instagram.com/aponte_bh/" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://www.youtube.com/@aponte_bh" target="_blank">YouTube</a>
+        <a
+          href="https://open.spotify.com/show/7xuJ0QrNgLJNmrHNi3Hp6W?si=395906eae4d141ce"
+          target="_blank"
+          >Spotify</a
+        >
+        <a href="https://web.facebook.com/apontebh" target="_blank">Facebook</a>
+      </div>
+    </footer>
+  </body>
 </html>
