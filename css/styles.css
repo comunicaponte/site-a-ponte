@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #0baab2;
+--text-color-contrast: #fff
+}
+body {
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer { 
+  background-color: var(--primary-color);
+  min-height: 100px;
+  justify-self: flex-end;
+  color: var(--text-color-contrast);
+}
