@@ -1,16 +1,35 @@
 :root {
   --primary-color: #0baab2;
---text-color-contrast: #fff
+  --text-color-contrast: #fff;
+  --space-4: 16px;
 }
 body {
   min-height: 1vh;
   display: flex;
   flex-direction: column;
 }
+main {
+  height: stretch;
+}
 
 footer { 
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--primary-color);
   min-height: 100px;
   justify-self: flex-end;
+  color: var(--text-color-contrast);
+}
+
+.footer_social  {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.footer_social a {
+  text-decoration: none;
   color: var(--text-color-contrast);
 }
