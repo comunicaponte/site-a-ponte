@@ -1,65 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A ponte</title>
+
+    <title>A-Ponte Bh</title>
+    <meta name="description" content="Template" />
+    <meta name="author" content="Arthur Phillip Silva" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
+
   <body>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        width: 1vw;
-        height: 1vh;
-      }
-      nav {
-        display: block;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        max-width: 1200px;
-        min-width: 400px;
-      }
-      ul {
-        padding: 0 1rem;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        gap: 0.5rem;
-      }
-      li {
-        padding: 1rem;
-        border: 1px solid #0baab2;
-        list-style: none;
-        border-radius: 8px;
-        min-width: fit-content;
-      }
-      a {
-        text-decoration: none;
-      }
-      @media (max-width: 600px) {
-        ul {
-          flex-direction: column;
-        }
-      }
-    </style>
     <header>
-      <h1>Páginas</h1>
+      <img
+        class="footer_logo_img"
+        src="../icons/a-ponte_wite_h.svg"
+        alt="Logo da Igreja A Ponte BH"
+      />
+      <nav>
+        <ul>
+          <li><button onclick="setContent('pages')">Início</button></li>
+          <li><button onclick="setContent('about')">Sobre</button></li>
+          <li><button onclick="setContent('groups')">GRs</button></li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="pages/paginaGR.html">GR</a></li>
-        <li><a href="pages/primeiraVisita.html">Primeira Visita</a></li>
-        <li><a href="pages/about.html">Sobre Nós</a></li>
-        <li><a href="pages/voluntarios2.html">Voluntários</a></li>
-        <li><a href="pages/template.html">Exemplo</a></li>
-      </ul>
-    </nav>
+    <main class="main_content">
+      <!-- Auto insert content -->
+    </main>
+
+    <footer>
+      <div class="footer_logo">
+        <img
+          class="footer_logo_img"
+          src="../icons/a-ponte_wite_h.svg"
+          alt="Logo da Igreja A Ponte BH"
+        />
+      </div>
+      <p class="footer_text">
+        &copy; 2025 Igreja A Ponte BH. Todos os direitos reservados.
+      </p>
+
+      <div class="footer_social">
+        <a href="https://www.instagram.com/aponte_bh/" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://www.youtube.com/@aponte_bh" target="_blank">YouTube</a>
+        <a
+          href="https://open.spotify.com/show/7xuJ0QrNgLJNmrHNi3Hp6W?si=395906eae4d141ce"
+          target="_blank"
+          >Spotify</a
+        >
+        <a href="https://web.facebook.com/apontebh" target="_blank">Facebook</a>
+      </div>
+
+      <script src="js/scripts.js"></script>
+    </footer>
   </body>
 </html>

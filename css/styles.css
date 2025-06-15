@@ -1,16 +1,58 @@
 :root {
   --color-primary: #0baab2;
   --color-surface: #101010;
+  --color-surface-light: #f4f4f4;
   --color-background: #000000;
   --text-color-contrast: #fff;
+  --space-3: 8px;
   --space-4: 16px;
+  --border: 1px solid #0baab2;
+  --border-radius: 8px;
+  --font-family: "Montserrat", sans-serif;
 }
+
 body {
   background-color: var(--color-background, #000000);
   min-height: 1vh;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-family, "Montserrat", sans-serif);
 }
+
+header {
+  padding: var(--space-3, 8px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-surface, #101010);
+  color: var(--text-color-contrast, #fff);
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: var(--space-4, 16px);
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary, #0baab2);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 main {
   height: stretch;
 }
@@ -43,7 +85,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  footer {
+  footer,
+  header {
     flex-direction: column;
   }
   .footer_social {
