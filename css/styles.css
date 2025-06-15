@@ -12,6 +12,7 @@
 }
 
 body {
+  position: relative;
   background-color: var(--color-background, #000000);
   min-height: 1vh;
   display: flex;
@@ -20,6 +21,8 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   padding: var(--space-3, 8px);
   display: flex;
   justify-content: space-around;
