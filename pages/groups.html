@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   }
   h1 {
     font-size: 3.5rem;
@@ -40,27 +40,33 @@
     background: url("https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/gr_banner_section.jpg")
       center/cover no-repeat;
   }
-  .container_box {
+  .container_card {
     max-width: 1200px;
     margin: auto;
   }
-  .info-boxes {
+  .card-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
     margin-top: 40px;
   }
-  .info-box {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  .card {
+    background: #f0fdfd;
+    border-left: 4px solid #00a8a8;
+    border-radius: 12px;
     padding: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     flex: 1 1 300px;
     max-width: 300px;
     text-align: center;
+    transition: all 0.3s ease;
   }
-  .info-box h4 {
+  .card:hover {
+    background: #e0f7f7;
+    transform: translateY(-4px);
+  }
+  .card h4 {
     color: #00a8a8;
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -70,10 +76,9 @@
     max-width: 800px;
     height: 1000px;
     border: none;
-    border-radius: 8px;
   }
   @media (max-width: 600px) {
-    .banner h1 {
+    h1 {
       font-size: 2.5rem;
     }
   }
@@ -98,7 +103,7 @@
 <div class="image-banner"></div>
 
 <section class="section">
-  <div class="container_box">
+  <div class="container_card">
     <h2>Grupos para Todos os Perfis</h2>
     <p>
       Temos grupos espalhados por
@@ -107,19 +112,19 @@
       diferentes rotinas e estilos de vida.
     </p>
 
-    <div class="info-boxes">
-      <div class="info-box">
+    <div class="card-grid">
+      <div class="card">
         <h4>Locais Estratégicos</h4>
         <p>
           Reuniões em lares, espaços comunitários e online, conforme sua
           disponibilidade.
         </p>
       </div>
-      <div class="info-box">
+      <div class="card">
         <h4>Diversos Horários</h4>
         <p>Escolha o dia e horário que melhor se encaixa com sua rotina.</p>
       </div>
-      <div class="info-box">
+      <div class="card">
         <h4>Ambiente Seguro</h4>
         <p>
           Conexões verdadeiras em um espaço seguro para compartilhar e crescer
@@ -138,9 +143,14 @@
       para você.
     </p>
     <iframe
+      title="Formulário de grupos de relacionamento"
       src="https://docs.google.com/forms/d/e/1FAIpQLSdHk23THEpsnZIjXBIjhx5i0Uw6EYGstwTqsFmP9lfbPCy2yw/viewform?embedded=true"
       loading="lazy"
-      >Carregando…</iframe
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
     >
+      Carregando…
+    </iframe>
   </div>
 </section>
