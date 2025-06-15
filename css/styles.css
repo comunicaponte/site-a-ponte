@@ -1,6 +1,6 @@
 :root {
   --color-primary: #0baab2;
-  --color-surface: #101010;
+  --color-surface-dark: #101010;
   --color-surface-light: #f4f4f4;
   --color-background: #000000;
   --text-color-contrast: #fff;
@@ -14,7 +14,7 @@
 body {
   position: relative;
   background-color: var(--color-background, #000000);
-  min-height: 1vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family, "Montserrat", sans-serif);
@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color-surface, #101010);
+  background-color: var(--color-surface-dark, #101010);
   color: var(--text-color-contrast, #fff);
 }
 
@@ -57,16 +57,18 @@ header button {
 }
 
 main {
-  height: stretch;
+  height: auto;
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   padding: var(--space-4, 16px);
   display: flex;
   justify-content: space-between;
   gap: var(--space-4);
   align-items: center;
-  background-color: var(--color-surface, #101010);
+  background-color: var(--color-surface-dark, #101010);
   min-height: 100px;
   justify-self: flex-end;
   color: var(--text-color-contrast, #fff);

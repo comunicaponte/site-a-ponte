@@ -26,6 +26,7 @@
     padding: 0 1rem;
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: auto;
     gap: 0.5rem;
@@ -35,7 +36,6 @@
     list-style: none;
     border-radius: var(--border-radius, 8px);
     min-width: fit-content;
-    width: 100px;
     text-align: center;
   }
   .page_list a {
@@ -48,11 +48,6 @@
     background-color: var(--color-primary, #0baab2);
     color: var(--color-text-contrast, #fff);
   }
-  @media (max-width: 600px) {
-    ul {
-      flex-direction: column;
-    }
-  }
 </style>
 
 <div class="container">
@@ -61,10 +56,12 @@
   </div>
   <div class="page_list">
     <ul>
-      <li><a href="pages/paginaGR.html">GR</a></li>
-      <li><a href="pages/primeiraVisita.html">Primeira Visita</a></li>
-      <li><a href="pages/sobrenos3.html">Sobre Nós</a></li>
-      <li><a href="pages/voluntarios2.html">Voluntários</a></li>
+      <li><a href="pages/paginaGR.html" target="_blank">GR</a></li>
+      <li>
+        <a href="pages/primeiraVisita.html" target="_blank">Primeira Visita</a>
+      </li>
+      <li><a href="pages/sobrenos3.html" target="_blank">Sobre Nós</a></li>
+      <li><a href="pages/voluntarios2.html" target="_blank">Voluntários</a></li>
     </ul>
   </div>
 </div>
