@@ -64,8 +64,10 @@ main {
   height: auto;
 }
 
-.toogle_preview {
+.toogle-preview,
+.copy-code {
   position: absolute;
+  font-size: 10px;
   top: 10px;
   right: 10px;
   width: var(--toogle-size);
@@ -76,6 +78,10 @@ main {
   border-radius: 999px;
 }
 
+.copy-code {
+  top: 50px;
+}
+  
 pre code {
   background-color: #1e1e1e;
   color: #d4d4d4;

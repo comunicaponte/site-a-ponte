@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/page.css" />
   </head>
 
   <body>
@@ -40,10 +41,12 @@
     </header>
 
     <main>
-      <button class="toogle_preview" onclick="tooglePreview()">Troca</button>
+      <button class="toogle-preview" onclick="tooglePreview()">Troca</button>
       <!-- Auto insert content init -->
     <div class="main_content"></div>
-    <pre><code class="main_raw"></code></pre>
+    <pre>
+      <button class="copy-code" onclick="copyContent()">📑</button>
+      <code class="main_raw"></code></pre>
       <!-- Auto insert content end -->
     </main>
 
