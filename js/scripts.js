@@ -49,10 +49,10 @@ function copyContent() {
   navigator.clipboard
     .writeText(contentCode)
     .then(() => {
-      console.log("Texto copiado com sucesso!");
+      alert("Texto copiado com sucesso!");
     })
     .catch((err) => {
-      console.error("Erro ao copiar o texto: ", err);
+      alert("Erro ao copiar o texto: ", err);
     });
 }
 
