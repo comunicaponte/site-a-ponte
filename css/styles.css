@@ -9,6 +9,9 @@
   --border: 1px solid #0baab2;
   --border-radius: 8px;
   --font-family: "Montserrat", sans-serif;
+  --toogle-size: 30px;
+  --toogle-backgrond: black;
+  --toogle-color: white;
 }
 
 body {
@@ -27,7 +30,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color-surface-dark, #101010);
+  background-color: var(--color-surface-dark, rgba(0,0,0,0.3));
   color: var(--text-color-contrast, #fff);
 }
 
@@ -57,7 +60,35 @@ header button {
 }
 
 main {
+  position: relative;
   height: auto;
+}
+
+.toogle_preview {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: var(--toogle-size);
+  height: var(--toogle-size);
+  background-color: var(--toogle-backgrond);
+  color: var(--toogle-color);
+  border: none;
+  border-radius: 999px;
+}
+
+pre code {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-size: 0.95em;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
