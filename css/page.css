@@ -1,102 +1,134 @@
-
 .banner {
   position: relative;
   background-position: center 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .backdrop {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .banner_title {
   font-size: 3.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    z-index: 1;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
- .section {
-    padding: 80px 20px;
-    background-color: #d9d9d9;
-    text-align: center;
-    text-align: center;
-    color: #000;
-  }
-  .section_container {
-    max-width: 960px;
-    margin: auto;
+.section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+  text-align: center;
+  color: #000;
+}
+.section_container {
+  max-width: 960px;
+  margin: auto;
+}
+.section_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #00a8a8;
+}
+.section_content {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: justify;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+.card {
+  background: #f0fdfd;
+  border-left: 4px solid #00a8a8;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background: #e0f7f7;
+  transform: translateY(-4px);
+}
+.card_title {
+  color: #00a8a8;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin-top: 40px;
+}
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 1000px;
+  border: none;
+}
+.centered {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
+}
+.wide {
+  max-width: 1200px;
+  margin: auto;
+}
+.theme-light {
+  background-color: #d9d9d9;
+  color: #000;
+}
+.theme-dark {
+  background-color: #000;
+  color: #fff;
+}
+.theme-normal {
+  background-color: #a6a6a6;
+  color: #000;
+}
+.theme-green {
+  background-color: #0baab2;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .banner_title {
+    font-size: 2.5rem;
   }
   .section_title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #00a8a8;
-  }
-  .section_content {
-    font-size: 1.2rem;
-    max-width: 800px;
-    line-height: 1.5;
-    margin: 0 auto;
-    text-align: justify;
-  }
-  .card-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 40px;
-  }
-  .card {
-    background: #f0fdfd;
-    border-left: 4px solid #00a8a8;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px;
-    max-width: 300px;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-  .card:hover {
-    background: #e0f7f7;
-    transform: translateY(-4px);
-  }
-  .card_title {
-    color: #00a8a8;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-  }
-  iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 1000px;
-    border: none;
-  }
-  .centered {
-    text-align: center;
-  }
-  .justified {
-    text-align: justify;
-  }
-  .wide {
-    max-width: 1200px;
-    margin: auto;
-  }
-@media (max-width: 600px) {
-    .banner_title {
-      font-size: 2.5rem;
-    }
-      .section_title {
     font-size: 2rem;
   }
-
-  }
+}
