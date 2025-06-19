@@ -7,9 +7,9 @@ const toogle = document.querySelector(".toogle-preview");
 
 function cleanText(text) {
   return text
-    .replace(/\n/g, ' ')        // Troca todas as quebras de linha por espaço
-    .replace(/\s+/g, ' ')       // Troca múltiplos espaços (ou tabs) por um único espaço
-    .trim();                    // Remove espaços nas pontas (início e fim)
+    .replace(/\n/g, " ") // Troca todas as quebras de linha por espaço
+    .replace(/\s+/g, " ") // Troca múltiplos espaços (ou tabs) por um único espaço
+    .trim(); // Remove espaços nas pontas (início e fim)
 }
 
 function setContent(page) {
@@ -19,12 +19,12 @@ function setContent(page) {
     return;
   }
 
- fetch(`css/page.css`)
+  fetch(`css/page.css`)
     .then((res) => res.text())
     .then((content) => {
       contentCode = `<style>\n${cleanText(content)}\n</style>\n`;
     });
-  
+
   fetch(`pages/${page}.html`)
     .then((res) => res.text())
     .then((content) => {
@@ -46,14 +46,15 @@ function setPreview() {
 }
 
 function copyContent() {
-  navigator.clipboard.writeText(contentCode)
+  navigator.clipboard
+    .writeText(contentCode)
     .then(() => {
-      console.log('Texto copiado com sucesso!');
+      console.log("Texto copiado com sucesso!");
     })
-    .catch(err => {
-      console.error('Erro ao copiar o texto: ', err);
+    .catch((err) => {
+      console.error("Erro ao copiar o texto: ", err);
     });
 }
 
-setContent("pages");
+setContent("home");
 setPreview();
