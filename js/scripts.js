@@ -32,6 +32,9 @@ function setContent(page) {
       contentCode += content;
       raw.textContent = contentCode;
     });
+
+  codePreview = false;
+  setPreview();
 }
 
 function tooglePreview() {
@@ -57,4 +60,3 @@ function copyContent() {
 }
 
 setContent("home");
-setPreview();
