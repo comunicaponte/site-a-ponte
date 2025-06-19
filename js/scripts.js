@@ -5,6 +5,13 @@ const html = document.querySelector(".main_content");
 const raw = document.querySelector(".main_raw");
 const toogle = document.querySelector(".toogle-preview");
 
+function cleanText(text) {
+  return text
+    .replace(/\n/g, ' ')        // Troca todas as quebras de linha por espaço
+    .replace(/\s+/g, ' ')       // Troca múltiplos espaços (ou tabs) por um único espaço
+    .trim();                    // Remove espaços nas pontas (início e fim)
+}
+
 function setContent(page) {
   let style;
   if (!html | !raw) {
@@ -15,7 +22,7 @@ function setContent(page) {
  fetch(`css/page.css`)
     .then((res) => res.text())
     .then((content) => {
-      contentCode = `<style>\n${content}\n</style>\n`;
+      contentCode = `<style>\n${cleanText(content)}\n</style>\n`;
     });
   
   fetch(`pages/${page}.html`)

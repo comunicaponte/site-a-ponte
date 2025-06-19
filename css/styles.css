@@ -32,6 +32,7 @@ header {
   align-items: center;
   background-color: var(--color-surface-dark, rgba(0,0,0,0.3));
   color: var(--text-color-contrast, #fff);
+  z-index: 20;
 }
 
 header ul {
@@ -77,6 +78,7 @@ main {
   color: var(--toogle-color);
   border: none;
   border-radius: 999px;
+  z-index: 10;
 }
 
 .copy-code {
