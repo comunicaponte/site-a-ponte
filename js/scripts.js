@@ -79,5 +79,5 @@ function copyContent() {
     });
 }
 
-setContent("pages");
+setContent("home");
 setPreview();
