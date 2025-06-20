@@ -1,38 +1,14 @@
 <style>
-  h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #ffffff;
-  }
   h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #00a8a8;
   }
-  p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.5;
-    text-align: justify;
-  }
+
   strong {
     font-weight: bold;
   }
-  .banner {
-    height: 50vh;
-    background: url("https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_banner.jpg")
-      center / cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  }
-  .banner p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #ffffff;
-  }
+
   section {
     padding: 80px 20px;
     color: #000;
@@ -66,11 +42,10 @@
     margin: auto;
   }
 
-  .img-grid {
+  .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    margin-top: 50px;
   }
   .img-box img {
     width: 100%;
@@ -101,35 +76,32 @@
     border-radius: 10px;
   }
 </style>
-<div class="banner">
-  <div>
-    <h1>Seja bem-vindo à A Ponte BH</h1>
-    <p>
+<div
+  class="banner"
+  style="
+    background-image: url('https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_banner.jpg');
+  "
+>
+  <span class="backdrop"></span>
+  <div class="banner_content">
+    <h1 class="banner_title">Seja bem-vindo à A Ponte BH</h1>
+    <p class="banner_subtitle">
       Queremos te ajudar a viver um encontro verdadeiro com Deus e com a
       comunidade!
     </p>
   </div>
 </div>
 
-<section class="tema-light">
+<section class="section">
   <div class="container">
     <h2 class="section-title">Horários dos Cultos</h2>
     <p class="times">Domingo: 9h, 11h e 19h</p>
-    <p class="times">Sábado: 19h</p>
   </div>
 </section>
 
-<section class="tema-light">
+<section class="section section tema-light">
   <div class="container">
-    <h2 class="section-title">Outras reuniões</h2>
-    <p class="times">Caverna: Sábado 15h</p>
-    <p class="times">Estação: Sábado 19:30h</p>
-  </div>
-</section>
-
-<section class="section tema-light">
-  <div class="container">
-    <div class="img-grid">
+    <div class="grid-container">
       <div class="img-box">
         <img
           src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_image1.jpg"
@@ -167,7 +139,7 @@
   </div>
 </section>
 
-<section class="tema-light">
+<section class="section">
   <div class="container">
     <h2>Endereço da Igreja</h2>
     <p><strong>R. Castelo de Sintra, 968</strong></p>
