@@ -30,7 +30,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color-surface-dark, rgba(0,0,0,0.3));
+  background-color: var(--color-surface-dark, rgba(0, 0, 0, 0.3));
   color: var(--text-color-contrast, #fff);
   z-index: 20;
 }
@@ -84,7 +84,7 @@ main {
 .copy-code {
   top: 50px;
 }
-  
+
 pre code {
   background-color: #1e1e1e;
   color: #d4d4d4;
@@ -92,7 +92,7 @@ pre code {
   border-radius: 8px;
   display: block;
   overflow-x: auto;
-  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-family: Consolas, Monaco, "Courier New", monospace;
   font-size: 0.95em;
 }
 

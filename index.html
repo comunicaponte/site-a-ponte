@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
   <head>
@@ -15,7 +15,6 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/page.css" />
   </head>
 
   <body>
@@ -30,8 +29,12 @@
           <li>
             <button onclick="setContent('pages')">Páginas antigas</button>
           </li>
-          <li><button onclick="setContent('home')">Início</button></li>
-          <li><button onclick="setContent('about')">Sobre</button></li>
+          <li>
+            <button onclick="setContent('home')">Início</button>
+          </li>
+          <li>
+            <button onclick="setContent('about')">Sobre</button>
+          </li>
           <li><button onclick="setContent('groups')">GRs</button></li>
           <li>
             <button onclick="setContent('contribuitors')">Voluntários</button>
@@ -43,10 +46,10 @@
     <main>
       <button class="toogle-preview" onclick="tooglePreview()">Troca</button>
       <!-- Auto insert content init -->
-    <div class="main_content"></div>
-    <pre>
-      <button class="copy-code" onclick="copyContent()">📑</button>
-      <code class="main_raw"></code></pre>
+      <div class="main_content"></div>
+      <pre>
+<button class="copy-code" onclick="copyContent()">📑</button>
+<code class="main_raw"></code></pre>
       <!-- Auto insert content end -->
     </main>
 
