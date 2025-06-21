@@ -1,14 +1,14 @@
 (function () {
-  const fadeObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.remove("invisible");
       } else {
-        entry.target.classList.remove("visible");
+        entry.target.classList.add("invisible");
       }
     });
   });
-  document.querySelectorAll(".fade-up").forEach(el => {
+  document.querySelectorAll(".fade-up").forEach((el) => {
     fadeObserver.observe(el);
   });
 })();

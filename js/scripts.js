@@ -23,9 +23,7 @@ async function setContent(page) {
   try {
     await Promise.all([getHtml(page), getStyle(), getScript()]);
 
-    contentCode = `<style>\n${cleanText(
-      styleContent
-    )}\n</style>\n${htmlContent}`;
+    contentCode = `<style>\n${styleContent}\n</style>\n${htmlContent}`;
     html.innerHTML = contentCode;
 
     const script = document.createElement("script");
@@ -36,6 +34,8 @@ async function setContent(page) {
   } catch (error) {
     console.error("Erro ao carregar conteúdo:", error);
   }
+  codePreview = false;
+  setPreview();
 }
 
 async function getHtml(page) {
@@ -73,10 +73,9 @@ function copyContent() {
     .then(() => {
       alert("Texto copiado com sucesso!");
     })
-    .catch(err => {
+    .catch((err) => {
       console.error("Erro ao copiar o texto: ", err);
     });
 }
 
 setContent("home");
-setPreview();
