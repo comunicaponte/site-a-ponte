@@ -1,81 +1,3 @@
-<style>
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #00a8a8;
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
-  section {
-    padding: 80px 20px;
-    color: #000;
-  }
-  h4 {
-    color: #0baab2;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  .container {
-    max-width: 960px;
-    margin: auto;
-  }
-  .tema-light {
-    background-color: #d9d9d9;
-  }
-  .times-container {
-    text-align: center;
-    margin: auto;
-  }
-  .times {
-    font-size: 1.8rem;
-    color: #ffffff;
-    font-weight: 700;
-    background-color: #0baab2;
-    padding: 25px 40px;
-    border-radius: 15px;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-  }
-  .img-box img {
-    width: 100%;
-    height: 250px;
-    border-radius: 14px;
-    object-fit: cover;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  .img-box img:hover {
-    transform: scale(1.03);
-  }
-  .img-box p {
-    font-size: 1rem;
-  }
-  .map-container {
-    background-color: #f8f9fa;
-    padding: 40px 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 16px;
-  }
-
-  .map-container iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-    border-radius: 10px;
-  }
-</style>
 <div
   class="banner"
   style="
@@ -85,31 +7,27 @@
   <span class="backdrop"></span>
   <div class="banner_content">
     <h1 class="banner_title">Seja bem-vindo à A Ponte BH</h1>
-    <p class="banner_subtitle">
-      Queremos te ajudar a viver um encontro verdadeiro com Deus e com a
-      comunidade!
-    </p>
   </div>
 </div>
 
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">Horários dos Cultos</h2>
+  <div class="section_container">
+    <h2 class="section_title">Horários dos Cultos</h2>
     <p class="times">Domingo: 9h, 11h e 19h</p>
   </div>
 </section>
 
-<section class="section section tema-light">
-  <div class="container">
+<section class="section theme-light fade-up">
+  <div class="section_container">
     <div class="grid-container">
       <div class="img-box">
         <img
           src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_image1.jpg"
-          class="highlight-img"
+          class="img-box_img"
           alt="Recepção"
         />
-        <h4>Recepção</h4>
-        <p>
+        <h4 class="img-box_title">Recepção</h4>
+        <p class="img-box_content">
           Você será recebido por uma equipe acolhedora e preparada para te
           receber com alegria.
         </p>
@@ -117,35 +35,25 @@
       <div class="img-box">
         <img
           src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_image2.jpg"
-          class="highlight-img"
+          class="img-box_img "
           alt="Pontezinha"
         />
-        <h4>Pontezinha</h4>
-        <p>Temos um espaço especial, divertido e seguro para as crianças.</p>
+        <h4 class="img-box_title">Pontezinha</h4>
+        <p class="img-box_content">Temos um espaço especial, divertido e seguro para as crianças.</p>
       </div>
-      <div class="img-box">
-        <img
-          src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_image3.png"
-          class="highlight-img"
-          alt="Acessibilidade"
-        />
-        <h4>Acessibilidade</h4>
-        <p>
-          Nosso ambiente é acessível para todos. Queremos que cada pessoa se
-          sinta acolhida.
-        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <h2>Endereço da Igreja</h2>
+<section class="section fade-up">
+  <div class="section_container">
+    <h2 class="section_title">Endereço da Igreja</h2>
     <p><strong>R. Castelo de Sintra, 968</strong></p>
     <p>Bairro Castelo - Belo Horizonte, MG</p>
-    <div class="map-container">
+    <div class="map_container">
       <iframe
+      class="map_iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3261179112776!2d-43.98050782394281!3d-19.441710280824107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699fc1f25d533%3A0x3d4f3d04f6d621f6!2sR.%20Castelo%20de%20Sintra%2C%20968%20-%20Castelo%2C%20Belo%20Horizonte%20-%20MG%2C%2031330-510!5e0!3m2!1spt-BR!2sbr!4v1717352765673!5m2!1spt-BR!2sbr"
         allowfullscreen=""
         loading="lazy"
