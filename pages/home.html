@@ -1,7 +1,7 @@
 <div
   class="banner"
   style="
-    background-image: url('https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_banner.jpg');
+    background-image: url(&quot;https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_banner.jpg&quot;);
   "
 >
   <span class="backdrop"></span>
@@ -13,7 +13,17 @@
 <section class="section">
   <div class="section_container">
     <h2 class="section_title">Horários dos Cultos</h2>
-    <p class="times">Domingo: 9h, 11h e 19h</p>
+    <div class="schedule">
+      <i class="material-icons">schedule</i>
+      <div class="schedule_container">
+        <h3 class="schedule_day">Domingo</h3>
+        <div class="schedule_times">
+          <p class="schedule_time">9h</p>
+          <p class="schedule_time">11h</p>
+          <p class="schedule_time">19h</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -35,12 +45,13 @@
       <div class="img-box">
         <img
           src="https://raw.githubusercontent.com/comunicaponte/site-a-ponte/main/images/home_image2.jpg"
-          class="img-box_img "
+          class="img-box_img"
           alt="Pontezinha"
         />
         <h4 class="img-box_title">Pontezinha</h4>
-        <p class="img-box_content">Temos um espaço especial, divertido e seguro para as crianças.</p>
-      </div>
+        <p class="img-box_content">
+          Temos um espaço especial, divertido e seguro para as crianças.
+        </p>
       </div>
     </div>
   </div>
@@ -53,7 +64,7 @@
     <p>Bairro Castelo - Belo Horizonte, MG</p>
     <div class="map_container">
       <iframe
-      class="map_iframe"
+        class="map_iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3261179112776!2d-43.98050782394281!3d-19.441710280824107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699fc1f25d533%3A0x3d4f3d04f6d621f6!2sR.%20Castelo%20de%20Sintra%2C%20968%20-%20Castelo%2C%20Belo%20Horizonte%20-%20MG%2C%2031330-510!5e0!3m2!1spt-BR!2sbr!4v1717352765673!5m2!1spt-BR!2sbr"
         allowfullscreen=""
         loading="lazy"
