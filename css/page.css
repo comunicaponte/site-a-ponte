@@ -203,6 +203,31 @@ iframe {
   line-height: 1.5;
 }
 
+ .highlight_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .highlight {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #cdeffc;
+    border-radius: 20px;
+    padding: 25px 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    color: #007c91;
+  }
+
+  .highlight i {
+    color: #00a8a8;
+  }
+
 .fade-up {
   opacity: 1;
   transform: translateY(0);
