@@ -20,6 +20,8 @@ async function setContent(page) {
     console.error("Main content element not found");
     return;
   }
+  sessionStorage.setItem('activePage', page);
+
   try {
     await Promise.all([getHtml(page), getStyle(), getScript()]);
 
@@ -78,4 +80,6 @@ function copyContent() {
     });
 }
 
-setContent("home");
+let activePage = sessionStorage.getItem('activePage') || "home";
+
+setContent(activePage);
