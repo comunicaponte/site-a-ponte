@@ -1,8 +1,15 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 
-.material-icons {
-  font-size: 36px;
-  font-weight: 200;
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
 .banner {
@@ -216,6 +223,7 @@ iframe {
 .highlight {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -226,7 +234,7 @@ iframe {
   color: #007c91;
 }
 
-.highlight i {
+.highlight span {
   color: #00a8a8;
 }
 
@@ -288,6 +296,21 @@ strong {
 .theme-green {
   background-color: #0baab2;
   color: #fff;
+}
+
+.theme-yellow {
+  background-color: #fff9db;
+  color: #000;
+}
+
+.theme-orange {
+  background-color: #fff2e0;
+  color: #000;
+}
+
+.theme-blue {
+  background-color: #e0f4fa;
+  color: #000;
 }
 
 @media (max-width: 600px) {
