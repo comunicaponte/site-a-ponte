@@ -82,6 +82,8 @@
   flex: 1 1 300px;
   max-width: 300px;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
   transition: all 0.3s ease;
 }
 
@@ -220,7 +222,7 @@ iframe {
   background-color: #cdeffc;
   border-radius: 20px;
   padding: 25px 35px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow:  0 2px 6px rgba(0, 0, 0, 0.4);
   color: #007c91;
 }
 
@@ -260,6 +262,7 @@ iframe {
 
 strong {
   font-weight: 600;
+  color: #00a8a8;
 }
 
 .wide {
