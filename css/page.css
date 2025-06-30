@@ -18,6 +18,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
+  max-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
