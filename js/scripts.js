@@ -38,6 +38,7 @@ async function setContent(page) {
   }
   codePreview = false;
   setPreview();
+  window.scrollTo(0, 0);
 }
 
 async function getHtml(page) {
