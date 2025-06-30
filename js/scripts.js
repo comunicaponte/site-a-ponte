@@ -47,9 +47,26 @@ async function getHtml(page) {
 }
 
 async function getStyle() {
-  const res = await fetch(`css/page.css`);
-  const content = await res.text();
+  const pageRes = await fetch(`css/page.css`);
+  const tokensRes = await fetch(`css/tokens.css`);
+  const pageCSS = await pageRes.text();
+  const tokensCSS = await tokensRes.text();
+  console.log(tokensCSS);
+  const content = await replaceTokens(tokensCSS, pageCSS);
   styleContent = cleanText(content);
+}
+
+async function replaceTokens(tokensCSS, paginasCSS) {
+  const tokens = {};
+  
+  // Extrai os tokens do :root
+  tokensCSS.replace(/--([\w-]+):\s*(.*?);/g, (_, nome, valor) => {
+    tokens[`var(--${nome})`] = valor.trim();
+  });
+console.log(JSON.stringify(tokens, null, 2));
+  // Substitui os tokens no CSS das páginas
+  const final = paginasCSS.replace(/var\(--[\w-]+\)/g, match => tokens[match] || match);
+  return final;
 }
 
 async function getScript() {

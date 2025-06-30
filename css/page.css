@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded");
 
-.material-symbols-rounded {
-  font-family: 'Material Symbols Rounded';
+.icon {
+  font-family: "Material Symbols Rounded";
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
   font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
 }
 
 .banner {
@@ -34,21 +34,21 @@
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  color: var(--ap-color-white);
+  text-shadow: var(--ap-shadow);
 }
 
 .banner_subtitle {
   font-size: 1.5rem;
   text-align: center;
-  color: #ffffff;
+  color: var(--ap-color-white);
 }
 
 .section {
   padding: 80px 20px;
-  background-color: #fff;
+  background-color: var(--ap-color-white);
   text-align: center;
-  color: #000;
+  color: var(--ap-color-black);
 }
 
 .section_container {
@@ -61,7 +61,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #00a8a8;
+  color: var(--ap-color-primary);
 }
 
 .section_content {
@@ -82,10 +82,10 @@
 
 .card {
   background: #f0fdfd;
-  border-left: 4px solid #00a8a8;
+  border-left: 4px solid var(--ap-color-primary);
   border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--ap-shadow);
   flex: 1 1 300px;
   max-width: 300px;
   text-align: center;
@@ -97,11 +97,11 @@
 .card:hover {
   background: #e0f7f7;
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--ap-shadow-hover);
 }
 
 .card_title {
-  color: #00a8a8;
+  color: var(--ap-color-primary);
   font-size: 1.5rem;
   margin-bottom: 15px;
   font-weight: 600;
@@ -144,7 +144,7 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  background: #000;
+  background: var(--ap-color-black);
   margin-top: 40px;
 }
 
@@ -179,35 +179,35 @@ iframe {
   gap: 25px;
 }
 
-.img-box {
+.display {
   display: flex;
   flex-direction: column;
   gap: 16px;
   text-align: center;
 }
 
-.img-box_img {
+.display_img {
   width: 100%;
   height: 250px;
   margin-bottom: 4px;
   border-radius: 14px;
   object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--ap-shadow);
   transition: transform 0.3s;
 }
 
-.img-box_img:hover {
+.display_img:hover {
   transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--ap-shadow-hover);
 }
 
-.img-box_title {
+.display_title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #0baab2;
+  color: var(--ap-color-primary);
 }
 
-.img-box_content {
+.display_content {
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -230,12 +230,18 @@ iframe {
   background-color: #cdeffc;
   border-radius: 20px;
   padding: 25px 35px;
-  box-shadow:  0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--ap-shadow);
   color: #007c91;
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ap-shadow-hover);
 }
 
 .highlight span {
-  color: #00a8a8;
+  color: var(--ap-color-primary);
 }
 
 .fade-up {
@@ -270,7 +276,7 @@ iframe {
 
 strong {
   font-weight: 600;
-  color: #00a8a8;
+  color: var(--ap-color-primary);
 }
 
 .wide {
@@ -280,37 +286,37 @@ strong {
 
 .theme-light {
   background-color: #d9d9d9;
-  color: #000;
+  color: var(--ap-color-black);
 }
 
 .theme-dark {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--ap-color-black);
+  color: var(--ap-color-white);
 }
 
 .theme-normal {
   background-color: #a6a6a6;
-  color: #000;
+  color: var(--ap-color-black);
 }
 
 .theme-green {
-  background-color: #0baab2;
-  color: #fff;
+  background-color: var(--ap-color-primary);
+  color: var(--ap-color-white);
 }
 
 .theme-yellow {
   background-color: #fff9db;
-  color: #000;
+  color: var(--ap-color-black);
 }
 
 .theme-orange {
   background-color: #fff2e0;
-  color: #000;
+  color: var(--ap-color-black);
 }
 
 .theme-blue {
   background-color: #e0f4fa;
-  color: #000;
+  color: var(--ap-color-black);
 }
 
 @media (max-width: 600px) {

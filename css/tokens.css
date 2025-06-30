@@ -1,0 +1,9 @@
+
+:root {
+  --ap-color-primary: #0baab2;
+  --ap-color-white: #ffffff;
+  --ap-color-black: #000000;
+  --ap-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --ap-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.6);
+  
+}
