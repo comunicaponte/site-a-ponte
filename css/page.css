@@ -73,6 +73,44 @@
   margin-bottom: 1.5rem;
 }
 
+.split {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 250px;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.split_image,
+.split_content {
+  width: 50%;
+  height: 100%;
+}
+
+.split_image {
+  overflow: hidden;
+}
+
+.split_image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.split_content {
+  padding: 2rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+.split_title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
 .card_grid {
   display: flex;
   flex-wrap: wrap;
@@ -109,29 +147,27 @@
 }
 
 .schedule {
+  width: 900px;
+  max-width: 90vw;
   display: flex;
-  align-items: end;
-  gap: 8px;
+  align-items: center;
+  gap: 32px;
 }
 
-.schedule_container {
+.schedule_day,
+.schedule_times {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 8px;
+  align-items: center;
+  gap: 16px;
 }
 
 .schedule_day {
+  justify-content: space-between;
   font-size: 1.5rem;
-  padding-bottom: 4px;
-
-  border-bottom: 2px solid #000;
 }
 
 .schedule_times {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .schedule_time {
@@ -306,18 +342,18 @@ strong {
 }
 
 .theme-yellow {
-  background-color: #fff9db;
+  background-color: var(--ap-color-yellow);
   color: var(--ap-color-black);
 }
 
 .theme-orange {
-  background-color: #fff2e0;
-  color: var(--ap-color-black);
+  background-color: var(--ap-color-orange);
+  color: var(--ap-color-white);
 }
 
 .theme-blue {
-  background-color: #e0f4fa;
-  color: var(--ap-color-black);
+  background-color: var(--ap-color-blue);
+  color: var(--ap-color-white);
 }
 
 @media (max-width: 600px) {
@@ -326,5 +362,20 @@ strong {
   }
   .section_title {
     font-size: 2rem;
+  }
+
+  .split,
+  .split.reverse {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .split_image,
+  .split_content {
+    width: 100%;
+  }
+
+  .split_image {
+    height: 250px;
   }
 }
