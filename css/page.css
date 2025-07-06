@@ -323,6 +323,11 @@ strong {
   color: var(--ap-color-primary);
 }
 
+.link {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
 .wide {
   max-width: 1200px;
   margin: auto;
