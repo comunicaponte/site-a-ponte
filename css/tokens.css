@@ -2,12 +2,15 @@
 :root {
   --ap-color-primary: #0baab2;
   --ap-color-primary-light: #0CC5D0;
-  --ap-color-white: #ffffff;
   --ap-color-black: #000000;
+  --ap-color-white: #ffffff;
   --ap-color-blue: #0c6980;
+  --ap-color-gray: #a6a6a6;
   --ap-color-orange: #d57d25;
   --ap-color-yellow: #ffbd59;
+  
+  --ap-border-radius: 12px;
+  
   --ap-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   --ap-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.6);
-  
 }
