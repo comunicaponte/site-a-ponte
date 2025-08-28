@@ -366,7 +366,7 @@ iframe {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  background-color: var(--color-primary);
+  background-color: var(--ap-color-primary);
   box-shadow: var(--ap-shadow);
   transition: all 0.3s ease;
   color: var(--ap-color-white);
